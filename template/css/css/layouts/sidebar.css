@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* line 2, ../../sass/layouts/sidebar.scss */
+.leftSidebar {
+  height: 100%;
+  padding-left: 0 !important;
+  margin: 1% 0% 1% 0%;
+  text-align: center;
+}
+/* line 11, ../../sass/layouts/sidebar.scss */
+.leftSidebar .userContainer img {
+  border: 3px solid #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  /* ╤И╨╕╤А╨╕╨╜╨░ ╨║╨░╤А╤В╨╕╨╜╨║╨╕ */
+  height: auto;
+  /* ╨▓╤Л╤Б╨╛╤В╨░ ╨║╨░╤А╤В╨╕╨╜╨║╨╕ */
+}
+/* line 23, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData {
+  text-align: left;
+  overflow: scroll;
+  height: 90%;
+  overflow-x: hidden;
+  max-height: 500px;
+}
+/* line 31, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .col-xs-12 {
+  padding: 0px;
+  margin: 3px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #f7f7f7;
+}
+/* line 38, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .col-xs-12:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* line 44, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 49, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .aboutUser {
+  color: #a0a1a5;
+  margin: 0px;
+}
+/* line 55, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .aboutUser.col-xs-9 {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 59, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .imgContainer {
+  float: left;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+  height: 36px;
+  width: 35px;
+  line-height: 33px;
+  margin-right: 5px;
+}
+/* line 72, ../../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .allUsersName {
+  display: block;
+  margin-top: 4px;
+  float: left;
+  font-size: 9px;
+}
+/* line 79, ../../sass/layouts/sidebar.scss */
+.leftSidebar .allUsersStatus {
+  font-size: 8px;
+  font-style: italic;
+  color: #a0a1a5;
+  margin-top: -2px;
+  display: block;
+  margin-bottom: 0px;
+}
+
+/* line 94, ../../sass/layouts/sidebar.scss */
+span {
+  color: #000000;
+}
+/* line 97, ../../sass/layouts/sidebar.scss */
+span.userName {
+  font-weight: bold;
+}
+
+/* line 101, ../../sass/layouts/sidebar.scss */
+h6.userStatus {
+  margin: 1px;
+  font-size: 11px;
+  color: #a0a1a5;
+}
+
+/* line 108, ../../sass/layouts/sidebar.scss */
+.userContainer {
+  padding: 5px 1px;
+  background: #e0e1e0;
+  margin-bottom: 5px;
+}
+
+/* line 113, ../../sass/layouts/sidebar.scss */
+.allUsersContainer {
+  height: 70%;
+  background: #e0e1e0;
+  padding: 5px 5px;
+}
+/* line 119, ../../sass/layouts/sidebar.scss */
+.allUsersContainer .form-inline {
+  margin-bottom: 11px;
+}
+/* line 123, ../../sass/layouts/sidebar.scss */
+.allUsersContainer span.userName {
+  font-weight: bold;
+}
+/* line 127, ../../sass/layouts/sidebar.scss */
+.allUsersContainer input {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 6px 12px;
+  font-size: 11px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/* line 144, ../../sass/layouts/sidebar.scss */
+.imgContainer {
+  cursor: pointer;
+}
+/* line 146, ../../sass/layouts/sidebar.scss */
+.imgContainer:hover {
+  opacity: 0.5;
+}
+
+/* line 150, ../../sass/layouts/sidebar.scss */
+.userData div.col-xs-12:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* line 159, ../../sass/layouts/sidebar.scss */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #738c9e;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2200;
+  margin-bottom: 84px;
+  margin-right: 84px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 186, ../../sass/layouts/sidebar.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: black;
+  opacity: 0.5;
+}

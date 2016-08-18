@@ -1,0 +1,262 @@
+/* line 5, ../../sass/layouts/popup.scss */
+.b-popup .b-popup-content {
+  position: relative;
+}
+/* line 8, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo {
+  padding: 10px;
+  overflow: hidden;
+}
+/* line 12, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle {
+  border-bottom: 1px solid #d4d0d0;
+  margin-bottom: 9px;
+}
+/* line 15, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle h4 {
+  float: left;
+}
+/* line 18, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.42857143;
+}
+/* line 23, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle i {
+  float: right;
+  cursor: pointer;
+  color: #000;
+  opacity: 0.2;
+}
+/* line 30, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle i:hover {
+  opacity: 0.8;
+}
+/* line 35, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDescription {
+  font-style: italic;
+}
+/* line 38, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture {
+  padding: 10px 0;
+}
+/* line 41, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+/* line 49, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #a0a1a5;
+}
+/* line 56, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike span {
+  padding: 0 5px;
+  font-size: 12px;
+  color: #000;
+  opacity: 0.5;
+}
+/* line 63, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike span.photoLike:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+/* line 78, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike i {
+  padding-left: 5px;
+}
+/* line 82, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike .photoLike {
+  padding-right: 0px;
+}
+/* line 85, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike .photoCountLike {
+  padding-left: 0px;
+}
+/* line 89, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks {
+  border-top: 1px solid #d4d0d0;
+}
+/* line 92, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback {
+  position: relative;
+  border-bottom: 1px solid #d4d0d0;
+}
+/* line 96, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* line 100, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback:hover #deleteFeedback {
+  display: block;
+}
+/* line 105, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback #deleteFeedback {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+/* line 115, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback #deleteFeedback:hover {
+  opacity: 0.9;
+  color: #5f9ea0;
+}
+/* line 120, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorPhoto {
+  overflow: hidden;
+  border-bottom: 1px solid #d4d0d0;
+  height: 80px;
+  line-height: 80px;
+}
+/* line 127, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorPhoto img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 132, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo {
+  padding: 1% 0 1% 2%;
+}
+/* line 135, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span {
+  width: 100%;
+  display: inline-block;
+}
+/* line 138, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span.authorName {
+  font-size: 14px;
+}
+/* line 141, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span.feedbackText {
+  font-size: 12px;
+}
+/* line 144, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span.feedbackDate {
+  font-size: 10px;
+  color: #a0a1a5;
+}
+/* line 152, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks > span {
+  float: right;
+  padding: 0 10px;
+  color: #5f9ea0;
+  cursor: pointer;
+}
+/* line 160, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks > span:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* line 166, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback {
+  min-height: 95px;
+  border-bottom: 1px solid #d4d0d0;
+}
+/* line 170, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback .feedbackTitle {
+  padding: 10px 0 3px;
+}
+/* line 173, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback span {
+  font-size: 16px;
+}
+/* line 177, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback .error span {
+  font-size: 13px;
+}
+/* line 182, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .likeContainer {
+  position: relative;
+  display: inline-block;
+}
+/* line 187, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .dateContainer {
+  float: left;
+}
+/* line 191, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .likeAuthor {
+  background: #e0e1e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #f7f7f7;
+  position: absolute;
+  top: -45px;
+}
+/* line 200, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .showLikeAuthor {
+  overflow: hidden;
+  float: left;
+  height: 30px;
+}
+/* line 205, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo #closePopup {
+  cursor: pointer;
+}
+/* line 209, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .editPhotoInfo {
+  position: absolute;
+  display: block;
+  top: 58px;
+  right: 20px;
+  text-align: right;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #5f9ea0;
+}
+/* line 220, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .editPhotoInfo span {
+  color: #5f9ea0;
+  display: block;
+}
+/* line 225, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture {
+  position: relative;
+  margin: 0 20px;
+}
+/* line 229, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture .fa-arrow-left {
+  position: absolute;
+  top: 49.5%;
+  font-size: 20px;
+  left: -25px;
+  cursor: pointer;
+  color: #000;
+  opacity: 0.2;
+}
+/* line 239, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture .fa-arrow-right {
+  position: absolute;
+  top: 49.5%;
+  font-size: 20px;
+  right: -25px;
+  cursor: pointer;
+  color: #000;
+  opacity: 0.2;
+}
+/* line 248, ../../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture .fa-arrow-left:hover,
+.b-popup .photoInfo .photoPicture .fa-arrow-right:hover {
+  opacity: 1;
+}
+/* line 255, ../../sass/layouts/popup.scss */
+.b-popup #addFeedback {
+  float: right;
+  margin-right: 0;
+}
+/* line 259, ../../sass/layouts/popup.scss */
+.b-popup .feedbackInput, .b-popup #addFeedback {
+  margin-bottom: 15px;
+}
+
+/* line 264, ../../sass/layouts/popup.scss */
+.myModalPhotoDelete {
+  margin-top: 180px;
+}

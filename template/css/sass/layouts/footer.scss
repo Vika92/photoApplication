@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  background-color: #202020;
+  color: #f2f2f2;
+
+  .logo{
+    padding-left:0px;
+  }
+  .social{
+    padding-right:0px;
+  }
+}
+.copyright p{
+  margin: 0;
+  padding: 15px 0;
+}
+
+.social{
+  padding: 15px 5%;
+  i{
+    margin:0 3%;
+    cursor: pointer;
+  }
+
+}
+
+.social i:hover{
+  opacity: 0.5;
+
+ color:#fff;
+
+}
+

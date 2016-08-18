@@ -1,0 +1,245 @@
+.mainContent{
+  height:100%;
+  margin: 1% 0;
+
+  padding-top: 15px;
+
+  background: #e0e1e0;
+
+  color:black;
+
+
+  .photoUserInfo{
+    margin:0 auto;
+    img{
+      width: 100%;
+      height: auto;
+
+      display:block;
+      margin:0 auto;
+    }
+    .table{
+      margin-bottom:10px;
+    }
+  }
+  .userInfoMain, .userPhotoMain{
+    position:relative;
+    border: 3px solid white;
+    padding: 25px 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+
+    .col-xs-12{
+      position:relative;
+    }
+    h4{
+
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0px 0px 7px;
+    }
+
+    .albumInfo{
+
+      position:relative;
+      display: inline-block;
+
+      padding: 10px;
+
+      margin: 25px 10px 10px;
+      width:150px;
+      
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: 1px solid #f7f7f7;
+
+      text-align:center;
+      font-size:10px;
+      .albumName{
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover,
+        &:active{
+          cursor:pointer;
+          text-decoration:underline;
+        }
+      }
+      .albumPhoto{
+        height:66px;
+
+        &:hover,
+        &:active{
+          opacity:0.5;
+          cursor:pointer;
+        }
+      }
+
+      .albumDescr{
+        font-size: 10px;
+
+        font-style: italic;
+      }
+      .albumDate{
+        font-size: 8px;
+        color: #a0a1a5;
+        margin-top: -10px;
+      }
+
+      .editAlbumInfo{
+        right: -1px;
+        top: -32px;
+        z-index: 1;
+        position: absolute;
+
+        span{
+          color: #5f9ea0;
+          font-style: italic;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+      span{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+        display: block;
+
+      }
+
+      img{
+        margin:0 auto;
+      }
+    }
+    #addAlbumBtn{
+      position:absolute;
+      top: -24px;
+      right: 17px;
+      color: #5f9ea0;
+      font-style: italic;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+  }
+  .infoUserInfo table{
+    font-size:12px;
+  }
+
+  .infoUserInfo div{
+    padding:0px;
+
+    table{
+      margin-bottom: 0px;
+
+    }
+
+    &.table-responsive.first{
+      margin-right: 10px;
+    }
+  }
+.p-a-0{
+  padding:0px;
+}
+  .titleUserInfo{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .privateCabinetMain{
+    position:relative;
+
+    span#cabinetBtn{
+      position: absolute;
+      right: 20px;
+      top: 6px;
+      z-index: 1;
+      font-style:italic;
+      color:#5f9ea0;
+      cursor:pointer;
+      text-decoration:underline;
+    }
+  }
+
+}
+
+.clearfix{
+  clear: both;
+}
+
+.albumDate{
+  padding-top: 6px;
+}
+.editAlbum{
+  z-index:5;
+}
+
+.addAlbumBtn{
+  position: absolute;
+  color: #5f9ea0;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+  top: -24px;
+  right: 17px;
+}
+
+.photoContainer{
+
+  margin: 10px;
+
+  //max-width: 190px;
+  overflow:hidden;
+  display:inline-block;
+  width: 190px;
+
+  line-height: 125px;
+
+  img{
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+    vertical-align: middle;
+  }
+  }
+//styles for Photo module
+#addPhotoBtn{
+  top: -48px;
+  right: 4px;
+  position: absolute;
+}
+.editInfo{
+  z-index: 1;
+  font-style: italic;
+  color: #5f9ea0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.userPhotoMain{
+  & .photoContainer img:hover{
+    opacity:0.5;
+    cursor: pointer;
+  }
+}
+.photoContainer {
+  height: 130px;
+}
+.photoContainer img {
+
+  width: 100%!important;
+  height: auto!important;
+}
+.no-padding {
+  padding: 0!important;
+}
+
+.mainContent  {
+  min-height: 400px!important;
+}
+.album-wrapper {
+  text-align: center;
+}
+.photoUserInfo{
+  padding-right:10px;
+}

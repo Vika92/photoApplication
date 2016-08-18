@@ -1,0 +1,240 @@
+/* line 2, ../../sass/layouts/content.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../../sass/layouts/content.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 11, ../../sass/layouts/content.scss */
+.content {
+  padding-bottom: 90px;
+  color: #e1e1df;
+}
+
+/* line 16, ../../sass/layouts/content.scss */
+.container {
+  height: 100%;
+}
+
+/* line 21, ../../sass/layouts/content.scss */
+.modal-footer.buttons button {
+  width: 75px;
+}
+
+/* line 25, ../../sass/layouts/content.scss */
+.btnStyle {
+  display: inline-block;
+  padding: 8px 0;
+  line-height: 1;
+  width: 105px;
+  max-width: 100%;
+  margin: 0 0px 5px 15px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #202020;
+  color: #ffffff;
+}
+/* line 37, ../../sass/layouts/content.scss */
+.btnStyle:hover, .btnStyle:active {
+  opacity: 0.5;
+  color: #fff;
+}
+
+/* line 47, ../../sass/layouts/content.scss */
+.modal-footer.buttons .btnStyle {
+  float: right;
+}
+
+/* line 52, ../../sass/layouts/content.scss */
+.hiddenElement {
+  display: none;
+}
+
+/* line 57, ../../sass/layouts/content.scss */
+#birthdateRegisterInput,
+#birthdateCabinetInput {
+  width: 100%;
+  height: 34px;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+/* line 66, ../../sass/layouts/content.scss */
+form .form-group > div {
+  padding-right: 55px;
+}
+
+/* line 71, ../../sass/layouts/content.scss */
+.file_upload {
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+/* line 80, ../../sass/layouts/content.scss */
+.file_upload > button {
+  float: left;
+  width: 8em;
+  /* example */
+  height: 100%;
+}
+
+/* line 86, ../../sass/layouts/content.scss */
+.file_upload > div {
+  float: left;
+  pointer-events: none;
+  /* element is not active for interaction*/
+  cursor: default;
+}
+
+/* line 96, ../../sass/layouts/content.scss */
+form .form-group div.col-sm-9.fileRegisterBlock,
+form .form-group div.file_upload {
+  padding-right: 0;
+}
+
+/* line 101, ../../sass/layouts/content.scss */
+.file_upload input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(20);
+  letter-spacing: 10em;
+  /* IE 9 fix */
+  -ms-transform: scale(20);
+  /* IE 9 fix */
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* line 113, ../../sass/layouts/content.scss */
+.fileBtnStyle {
+  height: 30px;
+  width: 105px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* line 126, ../../sass/layouts/content.scss */
+.fileBtnStyle:hover, .fileBtnStyle:active {
+  opacity: 0.5;
+  background: green;
+}
+
+/* line 132, ../../sass/layouts/content.scss */
+.fileBtnStyle:hover {
+  opacity: 0.5;
+}
+
+/* line 136, ../../sass/layouts/content.scss */
+.photoButton {
+  overflow: hidden;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+/* line 141, ../../sass/layouts/content.scss */
+.photoButton .photo {
+  margin-right: 20px;
+  float: left;
+}
+
+/* line 148, ../../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .file_upload {
+  margin-top: 65px;
+}
+/* line 151, ../../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .file_upload div.fileBtn {
+  float: none;
+}
+/* line 154, ../../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .file_upload i {
+  padding-left: 10px;
+}
+/* line 158, ../../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .fileName {
+  float: none;
+}
+
+/* line 163, ../../sass/layouts/content.scss */
+.fileCabinetInput {
+  margin-right: 20px;
+}
+
+/* line 168, ../../sass/layouts/content.scss */
+.b-container {
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  margin: 0px auto;
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* line 177, ../../sass/layouts/content.scss */
+.b-popup {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  position: fixed;
+  top: 0px;
+}
+
+/* line 187, ../../sass/layouts/content.scss */
+.b-popup .b-popup-content {
+  margin: 20px auto 20px;
+  width: 70%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+/* line 195, ../../sass/layouts/content.scss */
+div#photoUserInfo {
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+/* line 199, ../../sass/layouts/content.scss */
+.backToAlbums {
+  position: absolute;
+  top: -49px;
+  left: 7px;
+  color: #5f9ea0;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 213, ../../sass/layouts/content.scss */
+  .leftSidebar .allUsersContainer {
+    height: 400px;
+  }
+  /* line 216, ../../sass/layouts/content.scss */
+  .leftSidebar .allUsersContainer .usersData {
+    height: 85%;
+  }
+
+  /* line 223, ../../sass/layouts/content.scss */
+  .footer .container .logo,
+  .footer .container .copyright,
+  .footer .container .social {
+    text-align: center;
+  }
+}

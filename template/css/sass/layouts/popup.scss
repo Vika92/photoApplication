@@ -1,0 +1,272 @@
+.b-popup {
+
+
+
+  .b-popup-content{
+    position:relative;
+  }
+  .photoInfo {
+    padding: 10px;
+    overflow: hidden;
+
+    .photoTitle {
+      border-bottom: 1px solid #d4d0d0;
+      margin-bottom: 9px;
+      h4{
+        float:left;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.42857143;
+      }
+      i {
+        float: right;
+        cursor: pointer;
+
+        color: #000;
+        opacity: 0.2;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .photoDescription {
+      font-style: italic;
+    }
+    .photoPicture {
+      padding: 10px 0;
+
+      img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+      }
+    }
+    .photoDateLike {
+      position:relative;
+      margin-bottom: 10px;
+
+      font-size: 12px;
+      color: #a0a1a5;
+
+      span{
+        padding:0 5px;
+
+        font-size: 12px;
+        color: #000;
+        opacity:0.5;
+
+        &.photoLike:hover{
+          opacity:1;
+          cursor:pointer;
+        }
+
+
+
+      }
+      //.photoLike:hover{
+      //  .photoCountLike{
+      //    opacity:1;
+      //  }
+      //  opacity:1;
+      //}
+
+      i{
+        padding-left: 5px
+      }
+
+      .photoLike{
+        padding-right: 0px;
+      }
+      .photoCountLike{
+        padding-left: 0px;
+      }
+    }
+    .photoFeedbacks{
+      border-top: 1px solid #d4d0d0;
+
+      .feedback{
+        position:relative;
+        border-bottom: 1px solid #d4d0d0;
+
+        &:hover{
+          opacity:0.5;
+          cursor:pointer;
+
+          #deleteFeedback{
+            display:block;
+          }
+        }
+
+        #deleteFeedback{
+          position: absolute;
+          right: 5px;
+          top: 5px;
+
+          //&:hover{
+          //  opacity:0.8;
+          //}
+        }
+
+        #deleteFeedback:hover{
+          opacity:0.9;
+          color: #5f9ea0;
+        }
+
+        .feedbackAuthorPhoto{
+          overflow: hidden;
+          border-bottom: 1px solid #d4d0d0;
+
+          height: 80px;
+          line-height: 80px;
+
+          img{
+            width: 100% !important;
+            height: auto !important;
+          }
+        }
+        .feedbackAuthorInfo{
+          padding: 1% 0 1% 2%;
+
+          span{
+            width: 100%;
+            display: inline-block;
+            &.authorName{
+               font-size: 14px;
+            }
+            &.feedbackText{
+              font-size: 12px;
+            }
+            &.feedbackDate{
+              font-size: 10px;
+              color: #a0a1a5;
+            }
+
+          }
+        }
+      }
+      &>span{
+        float: right;
+        padding: 0 10px;
+
+        color: #5f9ea0;
+        cursor: pointer;
+
+      }
+      &>span:hover{
+        text-decoration:underline;
+        font-weight:bold;
+      }
+    }
+
+    .writeFeedback{
+      min-height: 95px;
+      border-bottom: 1px solid #d4d0d0;
+
+      .feedbackTitle{
+        padding: 10px 0 3px;
+      }
+      span{
+        font-size: 16px;
+      }
+      .error{
+        span{
+          font-size: 13px
+        }
+      }
+    }
+    .likeContainer{
+      position:relative;
+      display:inline-block;
+    }
+
+    .dateContainer{
+      float:left;
+    }
+
+    .likeAuthor{
+      //take width of likeAuthor and devide by 2, put to left
+      background: #e0e1e0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: 1px solid #f7f7f7;
+      position: absolute;
+      top: -45px;
+    }
+
+    .showLikeAuthor{
+      overflow:hidden;
+      float:left;
+      height: 30px;
+    }
+    #closePopup{
+      cursor: pointer;
+    }
+
+    .editPhotoInfo{
+      position: absolute;
+      display: block;
+      top: 58px;
+      right: 20px;
+      text-align: right;
+      font-style: italic;
+      cursor: pointer;
+      text-decoration: underline;
+      color: #5f9ea0;
+
+      span{
+        color: #5f9ea0;
+        display: block;
+      }
+    }
+    .photoPicture{
+      position:relative;
+      margin: 0 20px;
+
+      .fa-arrow-left{
+        position: absolute;
+        top: 49.5%;
+        font-size: 20px;
+        left: -25px;
+        cursor: pointer;
+        color: #000;
+        opacity: 0.2;
+      }
+
+      .fa-arrow-right{
+        position: absolute;
+        top: 49.5%;
+        font-size: 20px;
+        right: -25px;
+        cursor: pointer;
+        color: #000;
+        opacity: 0.2;
+      }
+      .fa-arrow-left:hover,
+      .fa-arrow-right:hover{
+        opacity: 1;
+      }
+    }
+
+  }
+  #addFeedback{
+    float: right;
+    margin-right: 0;
+  }
+  .feedbackInput, #addFeedback{
+    margin-bottom:15px;
+  }
+}
+
+.myModalPhotoDelete{
+  margin-top: 180px;
+}
+
+
+//#myModalPhotoDelete {
+//  z-index: 10519!important;
+//}
+

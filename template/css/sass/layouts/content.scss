@@ -1,0 +1,232 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+.content {
+  padding-bottom: 90px;
+  color:#e1e1df;
+}
+
+.container{
+  height:100%;
+}
+
+//popup
+.modal-footer.buttons button{
+  width:75px;
+}
+//styles for all buttons
+.btnStyle{
+  display: inline-block;
+  padding: 8px 0;
+  line-height: 1;
+  width: 105px;
+  max-width: 100%;
+  margin: 0 0px 5px 15px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #202020;
+  color: #ffffff;
+
+  &:hover,
+  &:active{
+    opacity: 0.5;
+    color:#fff;
+  }
+  &:active{
+
+  }
+}
+//styles for buttons in popup
+.modal-footer.buttons .btnStyle{
+  float:right;
+
+}
+
+.hiddenElement{
+  display:none;
+}
+
+//datepicker styles
+#birthdateRegisterInput,
+#birthdateCabinetInput{
+  width: 100%;
+  height: 34px;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+//register form styles
+form .form-group>div{
+    padding-right: 55px;
+}
+
+//file upload styles
+.file_upload{
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 2em /* the same as height */;
+
+}
+
+
+.file_upload > button{
+  float: left;
+  width: 8em;            /* example */
+  height: 100%
+}
+
+.file_upload > div{
+  float: left;
+
+
+  pointer-events: none; /* element is not active for interaction*/
+  cursor: default;
+}
+.file_upload div button.fileRegisterInput{
+
+}
+form .form-group div.col-sm-9.fileRegisterBlock,
+form .form-group div.file_upload{
+  padding-right:0;
+}
+
+.file_upload input[type=file]{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(20);
+  letter-spacing: 10em;     /* IE 9 fix */
+  -ms-transform: scale(20); /* IE 9 fix */
+  opacity: 0;
+  cursor: pointer
+}
+.fileBtnStyle{
+  height: 30px;
+  width: 105px;
+
+  margin: 0 5px;
+
+  cursor: pointer;
+
+  background-color:#f7f7f7;
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  &:hover,
+  &:active{
+    opacity: 0.5;
+    background:green;
+  }
+}
+.fileBtnStyle:hover{
+  opacity: 0.5;
+}
+
+.photoButton{
+  overflow: hidden;
+  padding-right: 0px;
+  margin-right: 0px;
+
+  .photo{
+    margin-right: 20px;
+    float: left;
+  }
+}
+.photoButton{
+  .fileCabinetBlock{
+    .file_upload{
+      margin-top: 65px;
+
+      div.fileBtn{
+        float:none;
+      }
+      i{
+        padding-left:10px
+      }
+    }
+    .fileName{
+      float:none;
+    }
+  }
+}
+.fileCabinetInput{
+  margin-right:20px;
+}
+
+//popup
+.b-container{
+  width:200px;
+  height:150px;
+  background-color: #ccc;
+  margin:0px auto;
+  padding:10px;
+  font-size:30px;
+  color: #fff;
+}
+.b-popup{
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  position: fixed;
+  top: 0px;
+}
+
+.b-popup .b-popup-content{
+  margin: 20px auto 20px;
+  width: 70%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+}
+div#photoUserInfo {
+  margin-bottom: 15px;
+  padding-right:10px;
+}
+.backToAlbums{
+  position: absolute;
+  top: -49px;
+  left: 7px;
+  color: #5f9ea0;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 767px) {
+ .leftSidebar{
+   .allUsersContainer{
+     height:400px;
+
+     .usersData{
+       height:85%;
+     }
+   }
+ }
+  .footer{
+    .container{
+      .logo,
+      .copyright,
+      .social{
+        text-align:center;
+      }
+
+    }
+  }
+
+}

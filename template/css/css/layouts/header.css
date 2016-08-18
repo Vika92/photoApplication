@@ -1,0 +1,41 @@
+/* line 1, ../../sass/layouts/header.scss */
+.header {
+  background-color: #f7f7f7;
+}
+/* line 5, ../../sass/layouts/header.scss */
+.header .buttons {
+  text-align: right;
+  padding-right: 0;
+  margin: 0px;
+}
+/* line 10, ../../sass/layouts/header.scss */
+.header #cabinetHeaderBtn {
+  margin-right: 0;
+}
+/* line 13, ../../sass/layouts/header.scss */
+.header .logo {
+  padding-left: 0;
+}
+
+/* line 19, ../../sass/layouts/header.scss */
+.logo {
+  padding: 15px 0;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 29, ../../sass/layouts/header.scss */
+.phrase {
+  color: #a0a1a5;
+}
+/* line 34, ../../sass/layouts/header.scss */
+.phrase p {
+  margin: 0;
+  padding: 8px 0;
+}
+
+/* line 40, ../../sass/layouts/header.scss */
+.buttons {
+  padding: 12px 33px;
+}

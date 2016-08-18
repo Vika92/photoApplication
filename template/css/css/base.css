@@ -1,0 +1,1475 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'montserratregular';
+  src: url("fonts/montserrat-regular-webfont.eot");
+  src: url("fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-regular-webfont.woff2") format("woff2"), url("fonts/montserrat-regular-webfont.woff") format("woff"), url("fonts/montserrat-regular-webfont.ttf") format("truetype"), url("fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../sass/core/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/core/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, ../sass/core/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../sass/core/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../sass/core/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../sass/core/normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../sass/core/normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, ../sass/core/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, ../sass/core/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, ../sass/core/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, ../sass/core/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, ../sass/core/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, ../sass/core/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, ../sass/core/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, ../sass/core/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, ../sass/core/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, ../sass/core/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, ../sass/core/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, ../sass/core/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, ../sass/core/normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, ../sass/core/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, ../sass/core/normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, ../sass/core/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, ../sass/core/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, ../sass/core/normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, ../sass/core/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, ../sass/core/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, ../sass/core/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, ../sass/core/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, ../sass/core/normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, ../sass/core/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, ../sass/core/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, ../sass/core/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, ../sass/core/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, ../sass/core/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, ../sass/core/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, ../sass/core/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, ../sass/core/normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, ../sass/core/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, ../sass/core/normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 2, ../sass/layouts/content.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../sass/layouts/content.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 11, ../sass/layouts/content.scss */
+.content {
+  padding-bottom: 90px;
+  color: #e1e1df;
+}
+
+/* line 16, ../sass/layouts/content.scss */
+.container {
+  height: 100%;
+}
+
+/* line 21, ../sass/layouts/content.scss */
+.modal-footer.buttons button {
+  width: 75px;
+}
+
+/* line 25, ../sass/layouts/content.scss */
+.btnStyle {
+  display: inline-block;
+  padding: 8px 0;
+  line-height: 1;
+  width: 105px;
+  max-width: 100%;
+  margin: 0 0px 5px 15px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #202020;
+  color: #ffffff;
+}
+/* line 37, ../sass/layouts/content.scss */
+.btnStyle:hover, .btnStyle:active {
+  opacity: 0.5;
+  color: #fff;
+}
+
+/* line 47, ../sass/layouts/content.scss */
+.modal-footer.buttons .btnStyle {
+  float: right;
+}
+
+/* line 52, ../sass/layouts/content.scss */
+.hiddenElement {
+  display: none;
+}
+
+/* line 57, ../sass/layouts/content.scss */
+#birthdateRegisterInput,
+#birthdateCabinetInput {
+  width: 100%;
+  height: 34px;
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+/* line 66, ../sass/layouts/content.scss */
+form .form-group > div {
+  padding-right: 55px;
+}
+
+/* line 71, ../sass/layouts/content.scss */
+.file_upload {
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+/* line 80, ../sass/layouts/content.scss */
+.file_upload > button {
+  float: left;
+  width: 8em;
+  /* example */
+  height: 100%;
+}
+
+/* line 86, ../sass/layouts/content.scss */
+.file_upload > div {
+  float: left;
+  pointer-events: none;
+  /* element is not active for interaction*/
+  cursor: default;
+}
+
+/* line 96, ../sass/layouts/content.scss */
+form .form-group div.col-sm-9.fileRegisterBlock,
+form .form-group div.file_upload {
+  padding-right: 0;
+}
+
+/* line 101, ../sass/layouts/content.scss */
+.file_upload input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(20);
+  letter-spacing: 10em;
+  /* IE 9 fix */
+  -ms-transform: scale(20);
+  /* IE 9 fix */
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* line 113, ../sass/layouts/content.scss */
+.fileBtnStyle {
+  height: 30px;
+  width: 105px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* line 126, ../sass/layouts/content.scss */
+.fileBtnStyle:hover, .fileBtnStyle:active {
+  opacity: 0.5;
+  background: green;
+}
+
+/* line 132, ../sass/layouts/content.scss */
+.fileBtnStyle:hover {
+  opacity: 0.5;
+}
+
+/* line 136, ../sass/layouts/content.scss */
+.photoButton {
+  overflow: hidden;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+/* line 141, ../sass/layouts/content.scss */
+.photoButton .photo {
+  margin-right: 20px;
+  float: left;
+}
+
+/* line 148, ../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .file_upload {
+  margin-top: 65px;
+}
+/* line 151, ../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .file_upload div.fileBtn {
+  float: none;
+}
+/* line 154, ../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .file_upload i {
+  padding-left: 10px;
+}
+/* line 158, ../sass/layouts/content.scss */
+.photoButton .fileCabinetBlock .fileName {
+  float: none;
+}
+
+/* line 163, ../sass/layouts/content.scss */
+.fileCabinetInput {
+  margin-right: 20px;
+}
+
+/* line 168, ../sass/layouts/content.scss */
+.b-container {
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  margin: 0px auto;
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* line 177, ../sass/layouts/content.scss */
+.b-popup {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  position: fixed;
+  top: 0px;
+}
+
+/* line 187, ../sass/layouts/content.scss */
+.b-popup .b-popup-content {
+  margin: 20px auto 20px;
+  width: 70%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+/* line 195, ../sass/layouts/content.scss */
+div#photoUserInfo {
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+/* line 199, ../sass/layouts/content.scss */
+.backToAlbums {
+  position: absolute;
+  top: -49px;
+  left: 7px;
+  color: #5f9ea0;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 213, ../sass/layouts/content.scss */
+  .leftSidebar .allUsersContainer {
+    height: 400px;
+  }
+  /* line 216, ../sass/layouts/content.scss */
+  .leftSidebar .allUsersContainer .usersData {
+    height: 85%;
+  }
+
+  /* line 223, ../sass/layouts/content.scss */
+  .footer .container .logo,
+  .footer .container .copyright,
+  .footer .container .social {
+    text-align: center;
+  }
+}
+/* line 1, ../sass/layouts/header.scss */
+.header {
+  background-color: #f7f7f7;
+}
+/* line 5, ../sass/layouts/header.scss */
+.header .buttons {
+  text-align: right;
+  padding-right: 0;
+  margin: 0px;
+}
+/* line 10, ../sass/layouts/header.scss */
+.header #cabinetHeaderBtn {
+  margin-right: 0;
+}
+/* line 13, ../sass/layouts/header.scss */
+.header .logo {
+  padding-left: 0;
+}
+
+/* line 19, ../sass/layouts/header.scss */
+.logo {
+  padding: 15px 0;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 29, ../sass/layouts/header.scss */
+.phrase {
+  color: #a0a1a5;
+}
+/* line 34, ../sass/layouts/header.scss */
+.phrase p {
+  margin: 0;
+  padding: 8px 0;
+}
+
+/* line 40, ../sass/layouts/header.scss */
+.buttons {
+  padding: 12px 33px;
+}
+
+/* line 1, ../sass/layouts/footer.scss */
+.footer {
+  width: 100%;
+  background-color: #202020;
+  color: #f2f2f2;
+}
+/* line 6, ../sass/layouts/footer.scss */
+.footer .logo {
+  padding-left: 0px;
+}
+/* line 9, ../sass/layouts/footer.scss */
+.footer .social {
+  padding-right: 0px;
+}
+
+/* line 13, ../sass/layouts/footer.scss */
+.copyright p {
+  margin: 0;
+  padding: 15px 0;
+}
+
+/* line 18, ../sass/layouts/footer.scss */
+.social {
+  padding: 15px 5%;
+}
+/* line 20, ../sass/layouts/footer.scss */
+.social i {
+  margin: 0 3%;
+  cursor: pointer;
+}
+
+/* line 27, ../sass/layouts/footer.scss */
+.social i:hover {
+  opacity: 0.5;
+  color: #fff;
+}
+
+/* line 2, ../sass/layouts/sidebar.scss */
+.leftSidebar {
+  height: 100%;
+  padding-left: 0 !important;
+  margin: 1% 0% 1% 0%;
+  text-align: center;
+}
+/* line 11, ../sass/layouts/sidebar.scss */
+.leftSidebar .userContainer img {
+  border: 3px solid #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  /* ╤И╨╕╤А╨╕╨╜╨░ ╨║╨░╤А╤В╨╕╨╜╨║╨╕ */
+  height: auto;
+  /* ╨▓╤Л╤Б╨╛╤В╨░ ╨║╨░╤А╤В╨╕╨╜╨║╨╕ */
+}
+/* line 23, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData {
+  text-align: left;
+  overflow: scroll;
+  height: 90%;
+  overflow-x: hidden;
+  max-height: 500px;
+}
+/* line 31, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .col-xs-12 {
+  padding: 0px;
+  margin: 3px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #f7f7f7;
+}
+/* line 38, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .col-xs-12:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* line 44, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 49, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .aboutUser {
+  color: #a0a1a5;
+  margin: 0px;
+}
+/* line 55, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .aboutUser.col-xs-9 {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 59, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .imgContainer {
+  float: left;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+  height: 36px;
+  width: 35px;
+  line-height: 33px;
+  margin-right: 5px;
+}
+/* line 72, ../sass/layouts/sidebar.scss */
+.leftSidebar .usersData .allUsersName {
+  display: block;
+  margin-top: 4px;
+  float: left;
+  font-size: 9px;
+}
+/* line 79, ../sass/layouts/sidebar.scss */
+.leftSidebar .allUsersStatus {
+  font-size: 8px;
+  font-style: italic;
+  color: #a0a1a5;
+  margin-top: -2px;
+  display: block;
+  margin-bottom: 0px;
+}
+
+/* line 94, ../sass/layouts/sidebar.scss */
+span {
+  color: #000000;
+}
+/* line 97, ../sass/layouts/sidebar.scss */
+span.userName {
+  font-weight: bold;
+}
+
+/* line 101, ../sass/layouts/sidebar.scss */
+h6.userStatus {
+  margin: 1px;
+  font-size: 11px;
+  color: #a0a1a5;
+}
+
+/* line 108, ../sass/layouts/sidebar.scss */
+.userContainer {
+  padding: 5px 1px;
+  background: #e0e1e0;
+  margin-bottom: 5px;
+}
+
+/* line 113, ../sass/layouts/sidebar.scss */
+.allUsersContainer {
+  height: 70%;
+  background: #e0e1e0;
+  padding: 5px 5px;
+}
+/* line 119, ../sass/layouts/sidebar.scss */
+.allUsersContainer .form-inline {
+  margin-bottom: 11px;
+}
+/* line 123, ../sass/layouts/sidebar.scss */
+.allUsersContainer span.userName {
+  font-weight: bold;
+}
+/* line 127, ../sass/layouts/sidebar.scss */
+.allUsersContainer input {
+  display: block;
+  width: 100%;
+  height: 28px;
+  padding: 6px 12px;
+  font-size: 11px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/* line 144, ../sass/layouts/sidebar.scss */
+.imgContainer {
+  cursor: pointer;
+}
+/* line 146, ../sass/layouts/sidebar.scss */
+.imgContainer:hover {
+  opacity: 0.5;
+}
+
+/* line 150, ../sass/layouts/sidebar.scss */
+.userData div.col-xs-12:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* line 159, ../sass/layouts/sidebar.scss */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #738c9e;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2200;
+  margin-bottom: 84px;
+  margin-right: 84px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 186, ../sass/layouts/sidebar.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: black;
+  opacity: 0.5;
+}
+
+/* line 1, ../sass/layouts/mainContent.scss */
+.mainContent {
+  height: 100%;
+  margin: 1% 0;
+  padding-top: 15px;
+  background: #e0e1e0;
+  color: black;
+}
+/* line 12, ../sass/layouts/mainContent.scss */
+.mainContent .photoUserInfo {
+  margin: 0 auto;
+}
+/* line 14, ../sass/layouts/mainContent.scss */
+.mainContent .photoUserInfo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* line 21, ../sass/layouts/mainContent.scss */
+.mainContent .photoUserInfo .table {
+  margin-bottom: 10px;
+}
+/* line 25, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain, .mainContent .userPhotoMain {
+  position: relative;
+  border: 3px solid white;
+  padding: 25px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+/* line 32, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .col-xs-12, .mainContent .userPhotoMain .col-xs-12 {
+  position: relative;
+}
+/* line 35, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain h4, .mainContent .userPhotoMain h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 0px 7px;
+}
+/* line 42, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo, .mainContent .userPhotoMain .albumInfo {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 25px 10px 10px;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #f7f7f7;
+  text-align: center;
+  font-size: 10px;
+}
+/* line 57, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .albumName, .mainContent .userPhotoMain .albumInfo .albumName {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 61, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .albumName:hover, .mainContent .userInfoMain .albumInfo .albumName:active, .mainContent .userPhotoMain .albumInfo .albumName:hover, .mainContent .userPhotoMain .albumInfo .albumName:active {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* line 67, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .albumPhoto, .mainContent .userPhotoMain .albumInfo .albumPhoto {
+  height: 66px;
+}
+/* line 70, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .albumPhoto:hover, .mainContent .userInfoMain .albumInfo .albumPhoto:active, .mainContent .userPhotoMain .albumInfo .albumPhoto:hover, .mainContent .userPhotoMain .albumInfo .albumPhoto:active {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* line 77, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .albumDescr, .mainContent .userPhotoMain .albumInfo .albumDescr {
+  font-size: 10px;
+  font-style: italic;
+}
+/* line 82, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .albumDate, .mainContent .userPhotoMain .albumInfo .albumDate {
+  font-size: 8px;
+  color: #a0a1a5;
+  margin-top: -10px;
+}
+/* line 88, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .editAlbumInfo, .mainContent .userPhotoMain .albumInfo .editAlbumInfo {
+  right: -1px;
+  top: -32px;
+  z-index: 1;
+  position: absolute;
+}
+/* line 94, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo .editAlbumInfo span, .mainContent .userPhotoMain .albumInfo .editAlbumInfo span {
+  color: #5f9ea0;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* line 101, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo span, .mainContent .userPhotoMain .albumInfo span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  display: block;
+}
+/* line 110, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain .albumInfo img, .mainContent .userPhotoMain .albumInfo img {
+  margin: 0 auto;
+}
+/* line 114, ../sass/layouts/mainContent.scss */
+.mainContent .userInfoMain #addAlbumBtn, .mainContent .userPhotoMain #addAlbumBtn {
+  position: absolute;
+  top: -24px;
+  right: 17px;
+  color: #5f9ea0;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* line 125, ../sass/layouts/mainContent.scss */
+.mainContent .infoUserInfo table {
+  font-size: 12px;
+}
+/* line 129, ../sass/layouts/mainContent.scss */
+.mainContent .infoUserInfo div {
+  padding: 0px;
+}
+/* line 132, ../sass/layouts/mainContent.scss */
+.mainContent .infoUserInfo div table {
+  margin-bottom: 0px;
+}
+/* line 137, ../sass/layouts/mainContent.scss */
+.mainContent .infoUserInfo div.table-responsive.first {
+  margin-right: 10px;
+}
+/* line 141, ../sass/layouts/mainContent.scss */
+.mainContent .p-a-0 {
+  padding: 0px;
+}
+/* line 144, ../sass/layouts/mainContent.scss */
+.mainContent .titleUserInfo {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 149, ../sass/layouts/mainContent.scss */
+.mainContent .privateCabinetMain {
+  position: relative;
+}
+/* line 152, ../sass/layouts/mainContent.scss */
+.mainContent .privateCabinetMain span#cabinetBtn {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  z-index: 1;
+  font-style: italic;
+  color: #5f9ea0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* line 166, ../sass/layouts/mainContent.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 170, ../sass/layouts/mainContent.scss */
+.albumDate {
+  padding-top: 6px;
+}
+
+/* line 173, ../sass/layouts/mainContent.scss */
+.editAlbum {
+  z-index: 5;
+}
+
+/* line 177, ../sass/layouts/mainContent.scss */
+.addAlbumBtn {
+  position: absolute;
+  color: #5f9ea0;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+  top: -24px;
+  right: 17px;
+}
+
+/* line 187, ../sass/layouts/mainContent.scss */
+.photoContainer {
+  margin: 10px;
+  overflow: hidden;
+  display: inline-block;
+  width: 190px;
+  line-height: 125px;
+}
+/* line 198, ../sass/layouts/mainContent.scss */
+.photoContainer img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+/* line 206, ../sass/layouts/mainContent.scss */
+#addPhotoBtn {
+  top: -48px;
+  right: 4px;
+  position: absolute;
+}
+
+/* line 211, ../sass/layouts/mainContent.scss */
+.editInfo {
+  z-index: 1;
+  font-style: italic;
+  color: #5f9ea0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* line 220, ../sass/layouts/mainContent.scss */
+.userPhotoMain .photoContainer img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* line 225, ../sass/layouts/mainContent.scss */
+.photoContainer {
+  height: 130px;
+}
+
+/* line 228, ../sass/layouts/mainContent.scss */
+.photoContainer img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* line 233, ../sass/layouts/mainContent.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 237, ../sass/layouts/mainContent.scss */
+.mainContent {
+  min-height: 400px !important;
+}
+
+/* line 240, ../sass/layouts/mainContent.scss */
+.album-wrapper {
+  text-align: center;
+}
+
+/* line 243, ../sass/layouts/mainContent.scss */
+.photoUserInfo {
+  padding-right: 10px;
+}
+
+/* line 5, ../sass/layouts/popup.scss */
+.b-popup .b-popup-content {
+  position: relative;
+}
+/* line 8, ../sass/layouts/popup.scss */
+.b-popup .photoInfo {
+  padding: 10px;
+  overflow: hidden;
+}
+/* line 12, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle {
+  border-bottom: 1px solid #d4d0d0;
+  margin-bottom: 9px;
+}
+/* line 15, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle h4 {
+  float: left;
+}
+/* line 18, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.42857143;
+}
+/* line 23, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle i {
+  float: right;
+  cursor: pointer;
+  color: #000;
+  opacity: 0.2;
+}
+/* line 30, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoTitle i:hover {
+  opacity: 0.8;
+}
+/* line 35, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDescription {
+  font-style: italic;
+}
+/* line 38, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture {
+  padding: 10px 0;
+}
+/* line 41, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+/* line 49, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #a0a1a5;
+}
+/* line 56, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike span {
+  padding: 0 5px;
+  font-size: 12px;
+  color: #000;
+  opacity: 0.5;
+}
+/* line 63, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike span.photoLike:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+/* line 78, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike i {
+  padding-left: 5px;
+}
+/* line 82, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike .photoLike {
+  padding-right: 0px;
+}
+/* line 85, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoDateLike .photoCountLike {
+  padding-left: 0px;
+}
+/* line 89, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks {
+  border-top: 1px solid #d4d0d0;
+}
+/* line 92, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback {
+  position: relative;
+  border-bottom: 1px solid #d4d0d0;
+}
+/* line 96, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* line 100, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback:hover #deleteFeedback {
+  display: block;
+}
+/* line 105, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback #deleteFeedback {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+/* line 115, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback #deleteFeedback:hover {
+  opacity: 0.9;
+  color: #5f9ea0;
+}
+/* line 120, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorPhoto {
+  overflow: hidden;
+  border-bottom: 1px solid #d4d0d0;
+  height: 80px;
+  line-height: 80px;
+}
+/* line 127, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorPhoto img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 132, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo {
+  padding: 1% 0 1% 2%;
+}
+/* line 135, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span {
+  width: 100%;
+  display: inline-block;
+}
+/* line 138, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span.authorName {
+  font-size: 14px;
+}
+/* line 141, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span.feedbackText {
+  font-size: 12px;
+}
+/* line 144, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks .feedback .feedbackAuthorInfo span.feedbackDate {
+  font-size: 10px;
+  color: #a0a1a5;
+}
+/* line 152, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks > span {
+  float: right;
+  padding: 0 10px;
+  color: #5f9ea0;
+  cursor: pointer;
+}
+/* line 160, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoFeedbacks > span:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* line 166, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback {
+  min-height: 95px;
+  border-bottom: 1px solid #d4d0d0;
+}
+/* line 170, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback .feedbackTitle {
+  padding: 10px 0 3px;
+}
+/* line 173, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback span {
+  font-size: 16px;
+}
+/* line 177, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .writeFeedback .error span {
+  font-size: 13px;
+}
+/* line 182, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .likeContainer {
+  position: relative;
+  display: inline-block;
+}
+/* line 187, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .dateContainer {
+  float: left;
+}
+/* line 191, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .likeAuthor {
+  background: #e0e1e0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #f7f7f7;
+  position: absolute;
+  top: -45px;
+}
+/* line 200, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .showLikeAuthor {
+  overflow: hidden;
+  float: left;
+  height: 30px;
+}
+/* line 205, ../sass/layouts/popup.scss */
+.b-popup .photoInfo #closePopup {
+  cursor: pointer;
+}
+/* line 209, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .editPhotoInfo {
+  position: absolute;
+  display: block;
+  top: 58px;
+  right: 20px;
+  text-align: right;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #5f9ea0;
+}
+/* line 220, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .editPhotoInfo span {
+  color: #5f9ea0;
+  display: block;
+}
+/* line 225, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture {
+  position: relative;
+  margin: 0 20px;
+}
+/* line 229, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture .fa-arrow-left {
+  position: absolute;
+  top: 49.5%;
+  font-size: 20px;
+  left: -25px;
+  cursor: pointer;
+  color: #000;
+  opacity: 0.2;
+}
+/* line 239, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture .fa-arrow-right {
+  position: absolute;
+  top: 49.5%;
+  font-size: 20px;
+  right: -25px;
+  cursor: pointer;
+  color: #000;
+  opacity: 0.2;
+}
+/* line 248, ../sass/layouts/popup.scss */
+.b-popup .photoInfo .photoPicture .fa-arrow-left:hover,
+.b-popup .photoInfo .photoPicture .fa-arrow-right:hover {
+  opacity: 1;
+}
+/* line 255, ../sass/layouts/popup.scss */
+.b-popup #addFeedback {
+  float: right;
+  margin-right: 0;
+}
+/* line 259, ../sass/layouts/popup.scss */
+.b-popup .feedbackInput, .b-popup #addFeedback {
+  margin-bottom: 15px;
+}
+
+/* line 264, ../sass/layouts/popup.scss */
+.myModalPhotoDelete {
+  margin-top: 180px;
+}

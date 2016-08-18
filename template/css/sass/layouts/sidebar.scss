@@ -1,0 +1,198 @@
+
+.leftSidebar{
+  height:100%;
+
+
+  padding-left: 0!important;
+  margin: 1% 0% 1% 0%;
+  text-align:center;
+
+  .userContainer{
+    img{
+
+      //display: block;
+      //margin: 0 auto;
+      //max-height: 85px;
+      border: 3px solid #f7f7f7;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      width: 100%; /* ширина картинки */
+      height: auto; /* высота картинки */
+
+    }
+  }
+  .usersData{
+    text-align:left;
+    overflow: scroll;
+    height: 90%;
+    overflow-x: hidden;
+    max-height:500px;
+
+
+    .col-xs-12{
+      padding:0px;
+      margin: 3px 0px;
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      border: 1px solid #f7f7f7;
+
+      &:hover{
+        opacity:0.5;
+        cursor:pointer;
+      }
+    }
+
+    img{
+      width: 100% !important;
+      height: auto !important;
+
+    }
+    .aboutUser{
+      color:#a0a1a5;
+      margin: 0px;
+
+
+    }
+    .aboutUser.col-xs-9{
+      padding: 0px;
+      margin:0px;
+    }
+    .imgContainer{
+      float: left;
+      overflow: hidden;
+      padding: 0;
+      margin: 0 auto;
+      height: 36px;
+      width: 35px;
+      line-height: 33px;
+      margin-right: 5px;
+
+
+    }
+
+    .allUsersName{
+      display: block;
+      margin-top: 4px;
+      float: left;
+      font-size: 9px;
+    }
+    }
+    .allUsersStatus{
+      font-size: 8px;
+      font-style: italic;
+      color: #a0a1a5;
+      margin-top: -2px;
+      display: block;
+      margin-bottom: 0px;
+    }
+  .imgContainer.col-xs-3{
+
+  }
+
+
+  }
+
+  span{
+    color: #000000;
+
+    &.userName{
+      font-weight: bold;
+    }
+  }
+  h6.userStatus{
+    margin: 1px;
+    font-size:11px;
+    color:#a0a1a5;
+
+  }
+
+  .userContainer{
+    padding: 5px 1px;
+    background: #e0e1e0;
+    margin-bottom:5px;
+  }
+  .allUsersContainer{
+    height: 70%;
+    background: #e0e1e0;
+    padding: 5px 5px;
+
+
+    .form-inline{
+      margin-bottom: 11px;
+    }
+
+    & span.userName{
+      font-weight: bold;
+    }
+
+    & input{
+      display: block;
+      width: 100%;
+      height: 28px;
+      padding: 6px 12px;
+      font-size: 11px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+  }
+
+  .imgContainer{
+    cursor:pointer;
+    &:hover{
+      opacity:0.5;
+    }
+  }
+.userData div.col-xs-12:hover{
+    opacity:0.5;
+    cursor:pointer;
+
+
+
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #738c9e;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2200;
+  margin-bottom: 84px;
+  margin-right: 84px;
+
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: black;
+  opacity: 0.5;
+
+}
+
+

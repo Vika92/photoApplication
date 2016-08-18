@@ -1,0 +1,43 @@
+AddDefaultCharset utf-8
+
+RewriteEngine On
+
+#RewriteCond %{HTTPS} !=on
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# If URL to the application is http://foo.com/path/to/ZendSkeletonApplication/
+# the set the base to /path/to/ZendSkeletonApplication/
+#RewriteBase /localhost/photoapplication/
+
+#php_flag display_startup_errors off
+#php_flag display_errors off
+#php_flag html_errors off
+#php_flag log_errors on
+#php_flag ignore_repeated_errors off
+#php_flag ignore_repeated_source off
+#php_flag report_memleaks on
+#php_flag track_errors on
+#php_value docref_root 0
+#php_value docref_ext 0
+#php_value error_log /home/path/public_html/domain/PHP_errors.log
+#php_value error_reporting -1
+#php_value log_errors_max_len 0
+#RewriteCond %{REQUEST_URI} =""
+#RewriteRule ^.*$ public/index.php [NC,L]
+php_value date.timezone Europe/Kiev
+#RewriteCond %{REQUEST_FILENAME} -f
+#RewriteRule ^.*$ - [NC,L]
+#RewriteRule   "^/$"  "/main"  [R]
+#RedirectMatch "^/$" "/main"
+#RewriteRule ^public/.*$ public/index.php [NC,L]
+RewriteBase /
+RewriteRule   "^/$"    "/main"  [R]
+RedirectMatch "^/$" "/main"
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php
+
+AddDefaultCharset utf-8
+
