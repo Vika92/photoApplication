@@ -1,0 +1,152 @@
+import React, {Component} from 'react';
+import SummaryPopup from './summary-popup';
+import Modal from '../../atoms/modal-page';
+import Dropdown, {DropdownTrigger, DropdownContent} from 'react-simple-dropdown';
+import {browserHistory} from 'react-router';
+
+class ProfileBio extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      edit: false,
+      type: 'edit',
+      modalIsOpen: false,
+      containerWidth: 0
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateContainerWidth);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateContainerWidth);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const profileBio = document.querySelector('.profile-bio');
+    if (prevState.containerWidth !== profileBio.offsetWidth) {
+      this.updateContainerWidth();
+    }
+  }
+
+  updateContainerWidth = () => {
+    const profileBio = document.querySelector('.profile-bio');
+    this.setState({
+      containerWidth: profileBio.offsetWidth
+    }, () => {
+      this.getTextLength();
+    });
+  };
+
+  getTextLength = containerWidth => {
+    const {summary} = this.props;
+    let width = containerWidth - 40;
+    const summaryDivided = summary.split('\n')
+      .map(text => text.length)
+      .filter(text => text !== 0);
+    let summaryLength = width * 0.78;
+    let breaksCount = 0;
+    let summaryVisible = 0;
+    summaryDivided.forEach((text) => {
+      summaryVisible += text;
+      if (summaryVisible < summaryLength) {
+        breaksCount++;
+      }
+    });
+    summaryLength = Math.ceil(width * (0.78 - breaksCount * 0.1));
+    return summary && summary.length > summaryLength ?
+      `${summary.slice(0, summaryLength)} ...` : summary;
+  };
+
+  showPopup = type => {
+    this.setState({
+      modalIsOpen: true,
+      type
+    });
+  };
+
+  showSignupPage = () => {
+    browserHistory.push('/signup');
+  };
+
+  onModalClosed = () => {
+    this.setState({modalIsOpen: false});
+  };
+
+  renderSummary(summary) {
+    return summary.split('\n').map((item, key) => <span key={key}>{item}<br /></span>);
+  }
+
+  render() {
+    const {summary, uuid, saveSummaryAndUpdate, hasUser} = this.props;
+    const {type, containerWidth} = this.state;
+
+    const slicedSummary = this.getTextLength(containerWidth);
+
+    const showModal = slicedSummary === summary ? false : true;
+
+    return (
+      <div className="profile-bio">
+        <Modal modalIsOpen={this.state.modalIsOpen} onModalClosed={this.onModalClosed}>
+          <SummaryPopup
+            type={type}
+            id={uuid}
+            summary={summary}
+            saveSummaryAndUpdate={saveSummaryAndUpdate}
+          />
+        </Modal>
+        <div className="about-header">
+          <Dropdown ref="dropdown" className="edit-menu">
+            <DropdownTrigger onClick={hasUser ? false : this.showSignupPage}>
+              <div className="edit-menu-btn"></div>
+            </DropdownTrigger>
+            <DropdownContent className="edit-popup-wrapper">
+              <ul className="edit-popup">
+                <li className="edit-action" onClick={this.handleLinkClick}>
+                  <p onClick={() => {
+                    this.showPopup('view');
+                  }}>View summary</p>
+                </li>
+                <li className="edit-action" onClick={this.handleLinkClick}>
+                  <p onClick={() => {
+                    this.showPopup('edit');
+                  }}>Edit summary</p>
+                </li>
+              </ul>
+            </DropdownContent>
+          </Dropdown>
+          <div className="badge double red">
+            <span className="bright">Summary</span>
+          </div>
+        </div>
+        <p className="bio-text">
+          {!slicedSummary ? (
+            <span>No Summary available for this profile. <br />
+
+							Click
+              &nbsp;<span
+                className="no-summary"
+                onClick={() => {
+                  this.showPopup('edit');
+                }}
+              >
+								here
+                                              </span>&nbsp;
+              to add Summary.
+                                      </span>
+          ) : slicedSummary === 'null' ? '' : this.renderSummary(slicedSummary)}
+        </p>
+
+        {(summary !== null && summary !== 'null' && showModal) ?
+          (<button className="see-more-btn" onClick={hasUser ? this.showPopup : this.showSignupPage}>
+            <i className="icon-down-open"/>Read more...
+          </button>) : ''
+        }
+      </div>
+    );
+  }
+}
+
+export default ProfileBio;
